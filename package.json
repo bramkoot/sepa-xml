@@ -1,7 +1,7 @@
 {
-  "name": "sepa-xml",
+  "name": "safe-sepa-xml",
   "version": "0.2.1",
-  "description": "A simple XML generator for SEPA transactions.",
+  "description": "A simple XML generator for SEPA transactions using money-math for safe summations.",
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover _mocha",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mgmco/sepa-xml.git"
+    "url": "git+ssh://git@github.com/bramkoot/sepa-xml.git"
   },
   "keywords": [
     "sepa",
@@ -18,14 +18,11 @@
     "payment",
     "xml"
   ],
-  "author": "Mike Timofiiv (http://fiiv.io)",
+  "author": "Bram Koot (http://www.bramkoot.nl)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mgmco/sepa-xml/issues"
-  },
-  "homepage": "https://github.com/mgmco/sepa-xml#readme",
   "dependencies": {
-    "handlebars": "^4.0.5"
+    "handlebars": "4.0.5",
+    "money-math": "2.4.3"
   },
   "devDependencies": {
     "chai": "^3.2.0",

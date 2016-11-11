@@ -1,5 +1,7 @@
 # SEPA-XML
 
+*This is a fork from the perfect mgmco/sepa-xml library. The only change is that for the summation of money, money-math is used instead of floating point calculations.*
+
 This module gives you a wrapper around generating a SEPA XML file. It works by using [Handlebars](http://handlebarsjs.com/) to generate the file instead of using the conventional XML tree approach used by other plugins.
 
 It does, however, run the final result through a validator and will throw an error if there's an issue with it!
